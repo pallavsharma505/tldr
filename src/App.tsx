@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react';
 import './App.css'
+import Markdown from 'react-markdown';
 
 function App() {
   const inputRef = useRef<HTMLDivElement>(null);
@@ -10,7 +11,7 @@ function App() {
 
   const onClick = async () => {
     if(inputRef !== null && inputRef.current !== null) {
-      const content = inputRef.current.innerHTML;
+      const content = inputRef.current.innerText;
       setResponse("Thinking ...");
       const body = {
         model: modelId,
@@ -49,7 +50,7 @@ function App() {
         <div className='btn-main' onClick={onClick}>
           TLDR It
         </div>
-        <pre className='output'>{response}</pre>
+        <Markdown className='output'>{response}</Markdown>
       </div>
     </div>
   )
