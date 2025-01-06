@@ -1,8 +1,16 @@
 {
   "name": "tldr-frontend",
-  "private": true,
-  "version": "0.0.0",
+  "version": "1.2.0",
   "type": "module",
+  "author": {
+    "name": "Pallav Sharma",
+    "email": "sharma@pallav.dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pallavsharma505/tldr.git"
+  },
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

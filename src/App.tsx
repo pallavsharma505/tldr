@@ -5,7 +5,7 @@ import Markdown from 'react-markdown';
 function App() {
   const inputRef = useRef<HTMLDivElement>(null);
   const [response, setResponse] = useState<string>('');
-  const groqApiKey = "";
+  const groqApiKey = import.meta.env.VITE_GROQ_API_KEY as string;
   const modelId = "llama-3.3-70b-versatile";
   const url = "https://api.groq.com/openai/v1/chat/completions";
 
