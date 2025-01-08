@@ -4,7 +4,7 @@
 
 ## Description
 
-This project is a React-based web application called "TLDR" that provides a user-friendly interface for summarizing lengthy and potentially off-topic text messages. Users can input text into an editable div, and upon clicking a button, the application sends the text to the Groq API for summarization. The summarized content is then displayed using the react-markdown library. The project is configured with Vite for fast development and includes TypeScript for type safety. It also uses ESLint for code linting and follows a structured configuration for TypeScript and Vite.
+This project is a React-based web application called `TLDR` that provides a user-friendly interface for summarizing lengthy and potentially off-topic text messages. Users can input text into an editable div, and upon clicking a button, the application sends the text to the Groq API for summarization. The summarized content is then displayed using the react-markdown library. The project is configured with Vite for fast development and includes TypeScript for type safety. It also uses ESLint for code linting and follows a structured configuration for TypeScript and Vite.
 
 ## How to Use
 
